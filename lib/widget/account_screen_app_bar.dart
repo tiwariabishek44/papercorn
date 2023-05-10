@@ -1,0 +1,65 @@
+import 'package:pleez/models/user_details_model.dart';
+import 'package:pleez/providers/user_detail_provider.dart';
+import 'package:pleez/screen/search_screen.dart';
+import 'package:pleez/utils/color_themes.dart';
+import 'package:pleez/utils/constant.dart';
+import 'package:pleez/utils/utils.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+class AccountScreenAppBar extends StatelessWidget with PreferredSizeWidget {
+  @override
+  final Size preferredSize;
+  AccountScreenAppBar({Key? key})
+      : preferredSize = Size.fromHeight(kAppBarHeight),
+        super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    Size screenSize = Utils().getScreenSize();
+
+    return Container(
+      height: kAppBarHeight,
+      width: screenSize.width,
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          colors: backgroundGradient,
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15),
+            child: Text('Pco',style: TextStyle(fontSize: 27,fontWeight: FontWeight.bold),),
+          ),
+          Row(
+            children: [
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.notifications_outlined,
+                  color: Colors.black,
+                ),
+              ),
+              IconButton(
+                onPressed: () {
+                  // Navigator.push(
+                  //     context,
+                  //     MaterialPageRoute(
+                  //         builder: (context) => const SearchScreen()));
+                },
+                icon: const Icon(
+                  Icons.search_outlined,
+                  color: Colors.transparent,
+                ),
+              ),
+            ],
+          )
+        ],
+      ),
+    );
+  }
+}

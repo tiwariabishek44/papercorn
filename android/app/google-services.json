@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "118084399922",
+    "project_id": "pleez-6947c",
+    "storage_bucket": "pleez-6947c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118084399922:android:6c8d160112e516667a9d2b",
+        "android_client_info": {
+          "package_name": "com.abishek.pleez"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118084399922-p6ligmmoc4r4ismpnumrn4b32ikf4pjo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwrVYR71OntRStPxD9ghBnUY3R-4c7ePQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118084399922-p6ligmmoc4r4ismpnumrn4b32ikf4pjo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
